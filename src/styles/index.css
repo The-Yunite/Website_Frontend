@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-dark-200 text-white font-sans antialiased;
+  cursor: none;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-pastel;
+  }
+
+  .text-gradient-2 {
+    @apply bg-clip-text text-transparent bg-gradient-pastel-2;
+  }
+}
