@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import Events from './components/Events';
 import PrintLab from './components/PrintLab';
 import Pricing from './components/Pricing';
 import About from './components/About';
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Hero />
       <Services />
+      <Events />
       <PrintLab />
       <Pricing />
       <About />

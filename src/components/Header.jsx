@@ -32,14 +32,15 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold text-gradient cursor-pointer"
+            className="flex items-center gap-3 cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            Yunite
+            <img src="/yunite-logo.png.jpg" alt="Yunite Logo" className="h-10 w-10 object-contain" />
+            <span className="text-2xl font-bold text-gradient">Yunite</span>
           </motion.div>
 
           <nav className="hidden md:flex items-center space-x-8">
-            {['Services', 'Pricing', 'About', 'Contact'].map((item) => (
+            {['Services', 'Events', 'Pricing', 'About', 'Contact'].map((item) => (
               <motion.button
                 key={item}
                 whileHover={{ y: -2 }}

@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Environment } from '@react-three/drei';
 import { motion } from 'framer-motion';
-import StackedSheets from '../three/StackedSheets';
+import YuniteLogo3D from '../three/YuniteLogo3D';
 
 const Hero = () => {
   const scrollToSection = (id) => {
@@ -84,25 +84,19 @@ const Hero = () => {
             className="h-[500px] lg:h-[600px]"
           >
             <Canvas
-              camera={{ position: [0, 2, 5], fov: 50 }}
+              camera={{ position: [0, 0, 6], fov: 50 }}
               shadows
             >
               <Suspense fallback={null}>
-                <ambientLight intensity={0.5} />
-                <spotLight
-                  position={[10, 10, 10]}
-                  angle={0.15}
-                  penumbra={1}
-                  intensity={1}
-                  castShadow
-                />
-                <StackedSheets />
+                <YuniteLogo3D />
                 <Environment preset="city" />
                 <OrbitControls
                   enableZoom={false}
                   enablePan={false}
+                  autoRotate
+                  autoRotateSpeed={0.5}
                   minPolarAngle={Math.PI / 3}
-                  maxPolarAngle={Math.PI / 2}
+                  maxPolarAngle={Math.PI / 1.5}
                 />
               </Suspense>
             </Canvas>
