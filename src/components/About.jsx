@@ -45,8 +45,8 @@ const About = () => {
             className="grid md:grid-cols-3 gap-8 mt-16"
           >
             {[
-              { number: '500+', label: 'Events Managed' },
-              { number: '50k+', label: 'Happy Attendees' },
+              { number: '2', label: 'Events Managed' },
+              { number: '300', label: 'Happy Attendees' },
               { number: '98%', label: 'Client Satisfaction' },
             ].map((stat, index) => (
               <div key={index} className="text-center">
