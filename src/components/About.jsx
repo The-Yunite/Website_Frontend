@@ -16,11 +16,11 @@ const About = () => {
             className="text-center mb-12"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              About <span className="text-gradient">Yunite</span>
+              About <span className="text-gradient">Yunyt</span>
             </h2>
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
-                Yunite is your comprehensive partner for event management and printing solutions.
+                Yunyt is your comprehensive partner for event management and printing solutions.
                 We believe there's a better way to organize events and bring your brand to life through
                 premium print products.
               </p>
@@ -45,8 +45,8 @@ const About = () => {
             className="grid md:grid-cols-3 gap-8 mt-16"
           >
             {[
-              { number: '2', label: 'Events Managed' },
-              { number: '300', label: 'Happy Attendees' },
+              { number: '10', label: 'Events Managed' },
+              { number: '5000', label: 'Happy Attendees' },
               { number: '98%', label: 'Client Satisfaction' },
             ].map((stat, index) => (
               <div key={index} className="text-center">

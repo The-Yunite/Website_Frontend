@@ -1,8 +1,4 @@
-import { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Environment } from '@react-three/drei';
 import { motion } from 'framer-motion';
-import YuniteLogo3D from '../three/YuniteLogo3D';
 
 const Hero = () => {
   const scrollToSection = (id) => {
@@ -20,7 +16,10 @@ const Hero = () => {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pastel-blue/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pastel-pink/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+        <div
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pastel-pink/10 rounded-full blur-3xl animate-float"
+          style={{ animationDelay: '2s' }}
+        ></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -47,7 +46,9 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-xl text-gray-300 leading-relaxed"
             >
-              From hackathons to corporate events, workshops to printing solutions, Yunite provides everything you need to make your events memorable and your brand stand out with PrintLab.
+              From hackathons to corporate events, workshops to printing solutions, Yunyt provides
+              everything you need to make your events memorable and your brand stand out with
+              PrintLab.
             </motion.p>
 
             <motion.div
@@ -76,30 +77,14 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right 3D Canvas */}
+          {/* Right visual replacement */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="h-[500px] lg:h-[600px]"
+            className="relative h-[500px] lg:h-[600px] flex items-center justify-center"
           >
-            <Canvas
-              camera={{ position: [0, 0, 6], fov: 50 }}
-              shadows
-            >
-              <Suspense fallback={null}>
-                <YuniteLogo3D />
-                <Environment preset="city" />
-                <OrbitControls
-                  enableZoom={false}
-                  enablePan={false}
-                  autoRotate
-                  autoRotateSpeed={0.5}
-                  minPolarAngle={Math.PI / 3}
-                  maxPolarAngle={Math.PI / 1.5}
-                />
-              </Suspense>
-            </Canvas>
+            <div className="w-[400px] h-[400px] bg-gradient-radial from-pastel-blue/20 via-pastel-pink/10 to-transparent rounded-full blur-2xl animate-pulse"></div>
           </motion.div>
         </div>
       </div>

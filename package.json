@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babylonjs/core": "^8.36.1",
+    "@babylonjs/gui": "^8.36.1",
+    "@babylonjs/loaders": "^8.36.1",
     "@react-three/drei": "^9.92.7",
     "@react-three/fiber": "^8.15.12",
     "framer-motion": "^10.18.0",

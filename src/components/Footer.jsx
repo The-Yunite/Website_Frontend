@@ -50,7 +50,7 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li>hello@yunite.com</li>
+              <li>weareyunyt@gmail.com</li>
               <li>+91 9643748904</li>
               <li>+91 9718301702</li>
               <li>Okhla, New Delhi</li>

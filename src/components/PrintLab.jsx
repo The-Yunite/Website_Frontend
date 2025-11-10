@@ -32,16 +32,16 @@ const PrintLab = () => {
   }, []);
 
   const products = [
-    {
-      name: 'Custom T-Shirts',
-      description: 'High-quality screen printing and embroidery on premium fabrics',
-      icon: (
-        <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M16 21v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S5 2.67 5 3.5V9l8 5v2l-8 5v-2H3v4h18v-4h-2l-8-5 8-5V3h2V1H3v2h2l8 5-8 5z"/>
-        </svg>
-      ),
-      gradient: 'from-pastel-pink to-pastel-purple',
-    },
+  {
+    name: 'Custom T-Shirts',
+    description: 'High-quality screen printing and embroidery on premium fabrics',
+   icon: (
+      <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M16.5 3l-1.5 2h-6L7.5 3H2v2l4 2v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7l4-2V3h-5.5zM10 9h4v2h-4V9z"/>
+      </svg>
+    ),
+    gradient: 'from-pastel-pink to-pastel-purple',
+  },
     {
       name: 'Branded Cups',
       description: 'Eco-friendly cups with vibrant custom designs for any event',

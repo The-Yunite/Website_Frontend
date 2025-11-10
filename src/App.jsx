@@ -8,6 +8,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
+import Team from './components/Team';
+
 
 function App() {
   return (
@@ -17,9 +19,10 @@ function App() {
       <Hero />
       <Services />
       <Events />
-      <PrintLab />
+       <PrintLab />
       <Pricing />
       <About />
+       <Team />
       <Contact />
       <Footer />
     </div>
