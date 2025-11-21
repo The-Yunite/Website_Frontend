@@ -7,15 +7,6 @@ const Events = () => {
   const events = {
     upcoming: [
       {
-        title: 'BrainHack Ideathon',
-        date: 'November 17, 2025',
-        location: 'Convention Centre Jamia Hamdard University',
-        attendees: '150+ People',
-        type: 'No Code Hackathon',
-        description: 'The BrainHack Ideathon is all about creativity, teamwork, and problem-solving! You don’t need to be a coder or a techie — both technical and non-technical students can join.',
-        gradient: 'from-pastel-blue to-pastel-purple',
-      },
-      {
         title: 'Education Enclave',
         date: 'Febuary 17,2026',
         location: 'American centre sector 43 Gurgaon',
@@ -46,6 +37,15 @@ const Events = () => {
       },
     ],
     past: [
+     {
+        title: 'BrainHack Ideathon',
+        date: 'November 17, 2025',
+        location: 'Convention Centre Jamia Hamdard University',
+        attendees: '150+ People',
+        type: 'No Code Hackathon',
+        description: 'The BrainHack Ideathon is all about creativity, teamwork, and problem-solving! You don’t need to be a coder or a techie — both technical and non-technical students can join.',
+        gradient: 'from-pastel-blue to-pastel-purple',
+      },
       {
         title: 'Hands-on AI x AR Workshop',
         date: 'October 28, 2025',
